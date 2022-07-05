@@ -1,0 +1,1 @@
+int max = arr[0];

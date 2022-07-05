@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    {% set node='김영진' %}
+    <h1>{{title}}</h1>
+    <p>안녕{{title}}</p>
+    <button class="{{title}}" type="submit">전송</button>
+    <input type="text" placeholder="{{title}} 연습" />
+    <div>{{node}} 화이팅!</div>
+    <p>{{'<strong>이스케이프</strong>'}}</p>
+    <p>{{'<strong>이스케이프</strong>'| safe}}</p>
+
+    {% set fruits = ['🥝','🥥','🍇','🍈','🍉'] %}
+    <ol>
+      {%for fruit in fruits %}
+      <li>{{loop.index}}번째 좋아하는 과일: {{fruit}}</li>
+      {%endfor %}
+    </ol>
+    <ol>
+      {%for m in me %}
+      <li>{{loop.index}}번째 좋아하는 과일: {{m}}</li>
+      {%endfor %}
+    </ol>
+
+    {%if isLoggedIn %}
+    <p>로그인 성공</p>
+    {%else %}
+    <p>로그인해야 함</p>
+    {%endif%}
+    <h1>{{name}}</h1>
+  </body>
+</html>

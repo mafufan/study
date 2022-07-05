@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <title>RESTful SERVER</title>
+  <link rel="stylesheet" href="./restFront.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <!-- GET / 요청 -->
+    <a href="/about">About</a>
+    <!-- GET /about 요청 -->
+  </nav>
+  <div>
+    <form id="form">
+      <input type="text" id="username">
+      <button type="submit">등록</button>
+    </form>
+  </div>
+  <div id="list">
+
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- axios기능을 위해 임포트 -->
+  <script src="./restFront.js"></script>
+  <!-- restFront.html실행시 사용할 기능의 소스코드를 정의 -->
+</body>
+
+</html>

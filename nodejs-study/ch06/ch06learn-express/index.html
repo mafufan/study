@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>RESTful SERVER</title>
+  <link rel="stylesheet" href="./restFront.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/index">About</a>
+  </nav>
+  <div>
+    <h2>소개 페이지입니다.</h2>
+    <p>사용자 이름을 등록하세요!</p>
+  </div>
+  <form id="form" action="/upload" method="post" enctype="multipart/form-data">
+    <!-- <input type="file" name="imagefile" />
+    <input type="file" name="imagefile1" /> -->
+    <input type="file" name="imagefiles" id="">
+    <input type="text" name="title" />
+    <button type="submit">업로드</button>
+  </form>
+</body>
+
+</html>

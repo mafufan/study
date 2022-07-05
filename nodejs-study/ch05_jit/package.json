@@ -1,0 +1,29 @@
+{
+  "name": "ch05_jit",
+  "version": "0.0.1",
+  "description": "package.json작성하기 연습습",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "filelist": "ls -l",
+    "start": "node serverfile.js"
+  },
+  "keywords": [
+    "japan",
+    "it",
+    "node",
+    "practice"
+  ],
+  "author": "yju_jit",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2"
+  }
+}

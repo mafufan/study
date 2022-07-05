@@ -1,0 +1,6 @@
+# git 캐시 삭제
+# git rm -r --cached .
+# git add .
+# git commit -m "clear git cache"
+
+/**/node_modules

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+
+  </form>
+</body>
+<script>
+  const formData = new FormData();
+  formData.append('name', '영진');
+  console.log(formData.get('name')); // 영진
+  formData.append('fruits', '🍎');
+  formData.append('fruits', '🍌');
+  formData.append('fruits', '🍊');
+  formData.append('number', ['1, 2, 3']);
+  console.log(formData.getAll('fruits')); // ['🍎','🍌','🍊']
+  console.log(formData.getAll('fruits')[0]); // 🍎
+  console.log(formData.getAll('fruits')[1]); // 🍌
+  console.log(formData.getAll('fruits')[2]); // 🍊
+  console.log(formData.getAll('number')); // ['1,2,3']
+  console.log(formData.get('number')[0]); // '1'
+  console.log(formData.get('number')[3]); // '2'
+  console.log(formData.get('number')[6]); // '3'
+  console.log("'fruits' in keys ?", formData.has('fruits')); // true
+  console.log("'food'   in keys ?", formData.has('food')); // false
+  console.log("'number' in keys ?", formData.has('number')); // true
+  formData.set('number', 'pizza');
+  formData.append('number', 'pizza2');
+  console.log(formData.getAll('number')); // ['pizza', 'pizza2']
+  console.log("'number' in keys ?", formData.has('number')); // true
+  console.log("'pizza' in keys ?", formData.has('pizza')); // false
+  formData.delete('fruits');
+  console.log("'fruits' in keys ?", formData.has('fruits')); // false
+
+</script>
+
+</html>

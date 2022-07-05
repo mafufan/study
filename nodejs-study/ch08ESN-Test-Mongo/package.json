@@ -1,0 +1,26 @@
+{
+  "name": "ch08esn-test-mongo",
+  "version": "0.0.1",
+  "description": "express, mongoose, nunjucks 사용 예제",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app",
+    "start": "nodemon app"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "nunjucks"
+  ],
+  "author": "H. J. Oh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

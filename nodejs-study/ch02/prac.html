@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice document</title>
+</head>
+
+<body>
+  <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+  <script>
+    // FormData 기본 라이브러리 연습
+    const formData = new FormData();
+    // 데이터 추가
+    formData.append('name', '김영진'); // key, value
+    formData.append('fruits', '🥝');
+    formData.append('fruits', '🍇');
+    formData.append('fruits', '🍍');
+    formData.append('test', ['1번', '2번', '3번']);
+    console.log(formData.getAll('test'))
+    /*
+    formData.append('fruits', '🍇');
+    formData.append('fruits', '🍍');
+    // 데이터 존재여부 확인
+    formData.has('fruits'); // key ---> true
+    formData.has('foods'); // key ---> false
+
+    // 데이터 가져오기(읽기)
+    console.log(formData.get('fruits'));
+    console.log(formData.getAll('fruits')); // ['🥝','🍇','🍍']
+
+    console.log(formData.append('test', ['1번', '2번', '3번']));
+    console.log(formData.get('test'));
+
+    // 데이터 삭제
+    formData.delete('test');
+    console.log(formData.get('test')); // null
+
+    // 데이터 덮어쓰기
+    formData.delete('fruits', 'strew');
+    console.log(formData.get('fruits')); //🍓 */
+  </script>
+</body>
+
+</html>
