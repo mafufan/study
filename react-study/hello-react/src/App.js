@@ -8,6 +8,8 @@ import EventExFun from './EventExFun';
 import EventExCls from './EventExCls';
 import ValidateExFef from './ValidateExFef';
 import ScrollBoxRef from './ScrollBoxRef';
+import MapTestComFun from './MapTestComFun';
+import IterateComFn from './IterateComFn';
 
 // rcc 클래스형 자동완성
 class App extends Component {
@@ -42,6 +44,8 @@ class App extends Component {
           맨밑으로
         </button>
         <ScrollBoxRef></ScrollBoxRef>
+        <MapTestComFun></MapTestComFun>
+        <IterateComFn></IterateComFn>
       </>
     );
   }
