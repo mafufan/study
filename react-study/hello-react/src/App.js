@@ -6,6 +6,8 @@ import StateComCls from './StateComCls';
 import StateComFun from './StateComFun';
 import EventExFun from './EventExFun';
 import EventExCls from './EventExCls';
+import ValidateExFef from './ValidateExFef';
+import ScrollBoxRef from './ScrollBoxRef';
 
 // rcc 클래스형 자동완성
 class App extends Component {
@@ -26,6 +28,20 @@ class App extends Component {
         <StateComFun></StateComFun>
         <EventExFun></EventExFun>
         <EventExCls></EventExCls>
+        <ValidateExFef></ValidateExFef>
+        <ScrollBoxRef
+          ref={ref => {
+            this.scrollBox = ref;
+          }}
+        ></ScrollBoxRef>
+        <button
+          onClick={e => {
+            this.scrollBox.scrollBoxBottom();
+          }}
+        >
+          맨밑으로
+        </button>
+        <ScrollBoxRef></ScrollBoxRef>
       </>
     );
   }
