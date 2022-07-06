@@ -5,6 +5,7 @@ import FuncMyCom from './FuncMyCom';
 import StateComCls from './StateComCls';
 import StateComFun from './StateComFun';
 import EventExFun from './EventExFun';
+import EventExCls from './EventExCls';
 
 // rcc 클래스형 자동완성
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
         </FuncMyCom> */}
         <StateComFun></StateComFun>
         <EventExFun></EventExFun>
+        <EventExCls></EventExCls>
       </>
     );
   }
