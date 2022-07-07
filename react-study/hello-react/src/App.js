@@ -10,9 +10,24 @@ import ValidateExFef from './ValidateExFef';
 import ScrollBoxRef from './ScrollBoxRef';
 import MapTestComFun from './MapTestComFun';
 import IterateComFn from './IterateComFn';
+import LifeCycleCls from './LifeCycleCls';
+import ErrorLifeCycleCls from './ErrorLifeCycleCls';
 
 // rcc 클래스형 자동완성
+const getRandColor = () => {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  // ffffff(16진수):6777215(십진수)
+};
 class App extends Component {
+  state = {
+    color: '#000000',
+  };
+  onClick = e => {
+    this.setState({
+      color: getRandColor(),
+    });
+  };
+
   render() {
     const name = '리액트 테스트';
     const test = 32;
@@ -46,6 +61,12 @@ class App extends Component {
         <ScrollBoxRef></ScrollBoxRef>
         <MapTestComFun></MapTestComFun>
         <IterateComFn></IterateComFn>
+        <div>
+          <button onClick={this.onClick}>렌덤색상</button>
+          <ErrorLifeCycleCls>
+            <LifeCycleCls color={this.state.color}></LifeCycleCls>
+          </ErrorLifeCycleCls>
+        </div>
       </>
     );
   }
