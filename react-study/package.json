@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@splinetool/runtime": "^0.9.80",
     "classnames": "^2.3.1",
     "node-sass": "^7.0.1",
     "react-icons": "^4.4.0",
